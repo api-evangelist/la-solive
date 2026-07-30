@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of https://www.la-solive.com
+host: https://www.la-solive.com
+notes: >-
+  No /.well-known/ discovery documents are published. La Solive operates a
+  marketing/enrollment website (Webflow) for a vocational training school and
+  exposes no public API, OAuth authorization server, or agent plugin manifest.
+  Recorded as a negative result so re-runs are idempotent.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other:
+- path: /llms.txt
+  status: 200
+  file: ../llms/la-solive-llms.txt
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
