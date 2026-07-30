@@ -1,20 +1,50 @@
 aid: la-solive
 name: La Solive
-description: 'La Solive is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Climate. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  La Solive is a French vocational training organization (organisme de formation) preparing
+  career-changers and apprentices for the trades behind building energy renovation and the
+  climate transition. It runs state-recognized, practice-based programs — chef de projet en
+  rénovation énergétique, conducteur de travaux, plombier chauffagiste pompe à chaleur et gaz,
+  technicien de maintenance CVC, installateur de panneaux photovoltaïques, QualiPAC and
+  agent de maintenance du bâtiment — delivered across campuses in Paris, Lyon, Nantes,
+  Marseille, Toulouse and Lille plus a distance-learning track, with Qualiopi certification and
+  France Travail / Mon Compte Formation / Transitions Pro financing. La Solive reports 1,500+
+  students trained and 500+ recruiting partner companies. It is a Partech portfolio company in
+  the Climate sector. As of this enrichment pass La Solive publishes no public API, developer
+  portal, or /.well-known/ discovery surface; it does publish an /llms.txt agent-readable site
+  index, captured in this repo.
 url: https://raw.githubusercontent.com/api-evangelist/la-solive/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67b85fe65bc5b2def96a0ac5/680cf8f4f3ef412f756f8631_la-solive-opengraph.avif
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - partech
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Climate
+- Education
+- Training
+- Energy Efficiency
+- Building Renovation
+- Workforce Development
+- France
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +54,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.la-solive.com/
+- type: Blog
+  url: https://www.la-solive.com/blog
+- type: Support
+  url: https://www.la-solive.com/contact
+- type: TermsOfService
+  url: https://www.la-solive.com/mentions-legales
+- type: PrivacyPolicy
+  url: https://www.la-solive.com/mentions-legales
+- type: About
+  url: https://www.la-solive.com/mission
+- type: Press
+  url: https://www.la-solive.com/presse
+- type: LinkedIn
+  url: https://www.linkedin.com/school/lasolive/
+- type: YouTube
+  url: https://www.youtube.com/@la-solive
+- type: Facebook
+  url: https://www.facebook.com/lasoliveformations/
+- type: Instagram
+  url: https://www.instagram.com/lasoliveformations/
+- type: LLMsTxt
+  url: llms/la-solive-llms.txt
+- type: DomainSecurity
+  url: security/la-solive-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
